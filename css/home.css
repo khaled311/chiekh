@@ -409,6 +409,36 @@ header .top .content .search .dropdown.bootstrap-select.bs3 .dropdown-menu ul {
 header .top .content .search .dropdown.bootstrap-select.bs3.open .dropdown-menu,
 header .top .content .search .dropdown.bootstrap-select.bs3.open .dropdown-menu ul {
   display: block;
+  overflow: initial;
+}
+
+header .top .content .search .dropdown.bootstrap-select.bs3.open .dropdown-menu {
+  max-height: -webkit-max-content !important;
+  max-height: -moz-max-content !important;
+  max-height: max-content !important;
+  border-radius: 10px;
+}
+
+header .top .content .search .dropdown.bootstrap-select.bs3.open .dropdown-menu > div.inner {
+  max-height: -webkit-max-content !important;
+  max-height: -moz-max-content !important;
+  max-height: max-content !important;
+  overflow-y: initial !important;
+}
+
+header .top .content .search .dropdown.bootstrap-select.bs3.open .dropdown-menu > div.inner ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+header .top .content .search .dropdown.bootstrap-select.bs3.open .dropdown-menu > div.inner ul li span {
+  font-size: 16px;
+  color: var(--main-color-light);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header .top .content .search .dropdown.bootstrap-select.bs3.open .dropdown-menu > div.inner ul li:hover span {
+  color: var(--sec-color);
 }
 
 @media (max-width: 480px) {
@@ -649,6 +679,7 @@ header.header_in .bottom {
 .right-categories {
   background-color: #fff;
   overflow: hidden;
+  height: 100%;
 }
 
 @media (max-width: 991px) {
@@ -677,6 +708,7 @@ header.header_in .bottom {
   padding: 42px 30px 60px;
   background: url("../images/Mask Group 1.png") no-repeat bottom;
   background-size: cover;
+  height: calc(100% - 68px);
 }
 
 @media (max-width: 991px) {
@@ -935,6 +967,7 @@ header.header_in .bottom {
 .categories .cat-left {
   background-color: #fff;
   padding: 30px;
+  height: 100%;
 }
 
 .categories .cat-left #home_tabs_left {
@@ -1895,6 +1928,9 @@ footer .col-lg-4 .socials a:hover svg path {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 480px) {
