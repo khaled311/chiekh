@@ -679,7 +679,6 @@ header.header_in .bottom {
 .right-categories {
   background-color: #fff;
   overflow: hidden;
-  height: 100%;
 }
 
 @media (max-width: 991px) {
@@ -708,7 +707,6 @@ header.header_in .bottom {
   padding: 42px 30px 60px;
   background: url("../images/Mask Group 1.png") no-repeat bottom;
   background-size: cover;
-  height: calc(100% - 68px);
 }
 
 @media (max-width: 991px) {
@@ -1145,6 +1143,14 @@ header.header_in .bottom {
   font-size: 12px;
   font-family: bold;
   color: var(--sec-color);
+}
+
+.categories:not(.cat) .right-categories {
+  height: 100%;
+}
+
+.categories:not(.cat) .right-categories ul {
+  height: calc(100% - 68px);
 }
 
 .categories.cat_single {
