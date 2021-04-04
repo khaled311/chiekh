@@ -1,3 +1,8 @@
+$(window).on("load", function () {
+  $(".loader").fadeOut(1000);
+  $("html").css("overflow-y", "auto");
+});
+
 $(function () {
     
     var home_slider = new Swiper('.home_slider .swiper-container', {

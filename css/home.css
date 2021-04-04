@@ -1,4 +1,5 @@
 html {
+  overflow-y: hidden;
   --main-color: #0D5E53;
   --main-color-rgb: 15, 98, 87;
   --main-color-light: #0F6257;
@@ -93,7 +94,7 @@ ul.res {
   src: url("../fonts/JannaLT-Bold.ttf") format("ttf"), url("../fonts/JannaLT-Bold.woff") format("woff"), url("../fonts/JannaLT-Bold.woff2") format("woff2"), url("../fonts/JannaLT-Bold.eot") format("eot");
 }
 
-.Flex, header .top .content .search .field, header .top .content .search .field button, header .top .content .options .menuTrigger, header .bottom .content ul li a, .right-categories .head, .books_newsletters .swiper-slide .overlay a, footer .col-lg-4 .socials a, .cat_single1 .cat_details .head .bottom a {
+.Flex, .loader, header .top .content .search .field, header .top .content .search .field button, header .top .content .options .menuTrigger, header .bottom .content ul li a, .right-categories .head, .books_newsletters .swiper-slide .overlay a, footer .col-lg-4 .socials a, .cat_single1 .cat_details .head .bottom a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,6 +104,16 @@ ul.res {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 999999;
 }
 
 .overlay_main {
