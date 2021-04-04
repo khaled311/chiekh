@@ -704,7 +704,7 @@ header.header_in .bottom {
 }
 
 .right-categories ul {
-  padding: 42px 30px 60px;
+  padding: 42px 30px 66px;
   background: url("../images/Mask Group 1.png") no-repeat bottom;
   background-size: cover;
 }
@@ -964,8 +964,7 @@ header.header_in .bottom {
 
 .categories .cat-left {
   background-color: #fff;
-  padding: 30px;
-  height: 100%;
+  padding: 32.5px 30px;
 }
 
 .categories .cat-left #home_tabs_left {
@@ -1143,14 +1142,6 @@ header.header_in .bottom {
   font-size: 12px;
   font-family: bold;
   color: var(--sec-color);
-}
-
-.categories:not(.cat) .right-categories {
-  height: 100%;
-}
-
-.categories:not(.cat) .right-categories ul {
-  height: calc(100% - 68px);
 }
 
 .categories.cat_single {
@@ -1385,6 +1376,10 @@ header.header_in .bottom {
   font-size: 12px;
   font-family: bold;
   color: var(--sec-color);
+}
+
+.interview_articles .row .col-lg-4 .head_kh {
+  margin-bottom: 13px;
 }
 
 .interview_articles .row .col-lg-4 #bottom_tabs_left {
