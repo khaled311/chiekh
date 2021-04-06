@@ -152,4 +152,10 @@ $(function () {
           // Options will go here
       });
     }catch(err){}
+
+    $(".right-categories .head").on("click", function() {
+      if($(window).width() <= 992){
+        $(".right-categories ul").slideToggle(1000);
+      }
+    })
 });

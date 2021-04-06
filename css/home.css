@@ -711,8 +711,7 @@ header.header_in .bottom {
 
 @media (max-width: 991px) {
   .right-categories ul {
-    height: 300px;
-    overflow-y: auto;
+    display: none;
     background-size: cover;
   }
 }
